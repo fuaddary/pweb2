@@ -9,7 +9,7 @@
 		$file_tmp = $_FILES['file']['tmp_name'];	
 
 		if(in_array($ekstensi, $ekstensi_diperbolehkan) === true){
-			if($ukuran < 1044070){			
+			if($ukuran < 2044070){			
 				move_uploaded_file($file_tmp, '../images/'.$nama);
 				$query = $db->query("INSERT INTO upload VALUES(NULL, '$nama')");
 				if($query){
@@ -27,12 +27,3 @@
 	//header("location:.php");
 ?>
 
-<!-- 	<?php 
-		$data = $db->query("select * from upload");
-		while($d = $db->fetch($data)){
-		?>
-		<img src="<?php echo "file/".$d['nama_file']; ?>">
-		<?php 
-		} 
-	?>	
- -->
