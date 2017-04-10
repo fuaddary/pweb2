@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blitar Research Center</title>
+        <link rel="stylesheet" type="text/css" href="style/newcss.css">
+    </head>
+    <body>
+         <nav>
+            <img src="images/nav.png" height="50" onclick="openNav()">
+        </nav>
+        <div id="myNav" class="overlay">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content" onclick="closeNav()">
+                <a href="#top">Home</a>
+                <a href="content.php">Content</a>
+                <a href="admin/login.php">Login</a>
+            </div>
+        </div>
+        <container>
+            <div id="top" >
+                <div id="title">
+                    <h1>BLITAR RESEARCH CENTER</h1>
+                <h3>Together We Built The Better future</h3>
+                </div>
+            </div>
+            <div id="mid">
+                <div class="title">
+                    <h2>Introducing</h2>
+                    <h1>THE MASTERPIECE</h1>
+                </div>
+                <div id="col">            
+                    <p>
+                       Blitar Research Center adalah Lembaga Pemerintah Non Kementerian (LPNK) yang berada dalam koordinasi Kementerian Riset, Teknologi dan Pendidikan Tinggi (Kemenristekdikti) yang bertanggung jawab langsung kepada Presiden.
+                    </p><p>
+                        Kami memiliki tugas melaksanakan tugas pemerintahan di bidang penelitian ilmu pengetahuan sesuai dengan ketentuan peraturan perundang-undangan yang berlaku. Selain itu kami juga melakukan pencerdasan masyarakat guna mengoptimalkan potensi potensi yang ada pada Kota Blitar.
+                    </p>
+                    <p>
+                        Adapun fungsionaris dari Blitar Research Center ini merupakan putra putri blitar yang telah menempuh jenjang pendidikan perguruan tinggi di berbagai bidang dan di berbagai daerah. 
+                    </p>
+                    
+                    <p>
+                        <img src="images/blueprint.jpg">
+                    </p>
+                </div>
+            </div>
+            <div id="bot">
+                <div class="title">
+                    <h1>OUR RESEARCH</h1>         
+                </div>
+                <ul>
+                    <li class="box1" onclick='openModal(1)'><div class="title-top">Farm<br>----------</div><div class="title-bot">Optimizing Agricultural Land</div></li>
+                    <li class="box2"><div class="title-top">Technology<br>--------------------</div><div class="title-bot">Technology Enhancement</div></li>
+                    <li class="box3"><div class="title-top">Network<br>----------------</div><div class="title-bot">Widening Relationship</div></li>
+                    <li class="box4" onclick='openModal(2)'><div class="title-top">Livestock<br>-----------------</div><div class="title-bot">Synergize With Agriculture</div></li>
+                    <li class="box5" onclick='openModal(3)'><div class="title-top">Tourism<br>---------------</div><div class="title-bot">Introducing Tourism Spots</div></li>
+                    <li class="box6"><div class="title-top">Social<br>-------------</div><div class="title-bot">Resource Development</div></li>
+                </ul>
+            </div>
+        </container>
+        <footer>
+            <a href="#">Kontak</a>
+            <a href="#">Lokasi</a>
+            <a href="#">Bantuan</a>
+            <a href="#">Bergabung</a>
+        </footer>
+        
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content" id="m1">
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-content" id="m2">
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-content" id="m3"> 
+            <span class="close">&times;</span>
+          </div>
+
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+            }
+            function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+            }
+                        // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            function openModal(id) {
+                modal.style.display = "block";
+                if (id==1) { document.getElementById('m1').style.display = "block"; }
+                else if (id==2) { document.getElementById('m2').style.display = "block"; }
+                else if (id==3) { document.getElementById('m3').style.display = "block";  }
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+                document.getElementById('m1').style.display = "none"
+                document.getElementById('m2').style.display = "none"
+                document.getElementById('m3').style.display = "none"
+                
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    document.getElementById('m1').style.display = "none"
+                    document.getElementById('m2').style.display = "none"
+                    document.getElementById('m3').style.display = "none"
+                
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,345 @@
+body {
+    margin: 0px 0px;
+ }
+nav {
+    float:left;
+    margin: 20px 20px;
+}
+
+nav {
+    margin: 40px;
+    display: block;
+    position: fixed;
+}
+nav:hover{
+    transition: 0.1s;
+    transform: scale(1.1);
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 1);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#top {
+    margin: 0px 0px;
+    background-image: url(http://www.designvertise.com/wp-content/uploads/2014/05/Space-45-Night-by-Seth-Eckert.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 700px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    height: 700px;
+    background-attachment: fixed; 
+}
+#title{
+    padding: 20px;
+    width: auto ;
+    height: auto;
+    border-width: thick;
+    border-style: solid;
+    border-color: white;
+}
+
+#top h1 {
+   font-family: "Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+    font-size: calc(25px + 1.75vw);
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+#top h3 {
+    font-family: "Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+    font-size: calc(15px + 1vw);
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+#mid {
+    margin: 0px 0px;
+    height: 500px;
+    padding-top: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: white; /*#0D0C4E;*/
+    text-align: justify;
+    color: black;
+    font-family: gilroy-light,Helvetica,Arial;
+    
+}
+
+
+#mid img{
+    width: 40vw;
+}
+.title {
+    text-align: center;
+    font-family: Verdana;
+}
+.title h1 {
+    color: orangered;
+    font-size: 50px;
+    margin: 0px;
+    margin-bottom:  40px;
+}
+
+#title:hover {
+    transform: scale(1.03);
+    transition: 0.1s;
+}
+.title h1:hover {
+    transition: 0.2s;
+    color: gold;
+}
+
+#col{
+    height: 500px;
+    column-count: 2;
+}
+#col p{
+    margin: 1em;
+    
+}
+#mid h2{
+    width: auto;
+    align-items: center;
+    margin: 0px;
+}
+
+/*bottom*/
+#bot {
+    background-color: white;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    margin: 10vw;
+    width: auto;
+    height: auto;
+}
+
+#bot ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#bot li {
+    align-content: center;
+    float: left;
+    display: block;
+    background-size: cover;
+}
+
+#bot li.box1 {
+    background-image: url(../images/sawah.jpg);
+    color: white;
+    text-align: center;
+    height: 24vw;
+    width: 48vw;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#bot li.box2 {
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    height: 24vw;
+    width: 24vw;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#bot li.box3 {
+    background-color: #111;
+    text-align: center;
+    color: white;
+    height: 24vw;
+    width: 24vw;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#bot li.box4 {
+    background-image: url(../images/ternak.jpeg);
+    color: white;
+    text-align: center;
+    height: 24vw;
+    width: 48vw;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#bot li.box5 {
+    background-image: url(../images/pariwisata.jpg);
+    display: block;
+    color: white;
+    text-align: center;
+    height: 24vw;
+    width: 48vw;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+#bot li.box6 {
+    display: block;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    height: 24vw;
+    width: 24vw;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#bot li:hover{
+    filter:grayscale(0.5) ;
+    transition: 0.5s;
+}
+
+.title-top{
+    vertical-align: text-top;
+    font-family: "Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+    font-size: 20px;
+    text-align: right;
+}
+.title-bot{
+    text-align: left;
+    height: 20vw;
+    display: flex;
+	align-items:flex-end;
+    font-family: "Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+    font-size: 45px;
+}
+
+#bot li:hover {
+    transition: 0.1s;
+    
+}
+
+footer {
+    background-color: #111;
+    position:absolute; 
+    width: 90%;
+    padding-left: 10%;
+}
+footer a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 90px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: verdana, monospace;
+}
+footer a:hover {
+    color: gold;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+.modal-content {
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    width: 70vw;
+    height: 30vw;
+}
+
+#m1 {
+    display: none;
+    background-image: url(../images/sawah.jpg);
+}
+
+#m2{
+    display: none;
+    background-image: url(../images/ternak.jpeg);
+}
+#m3{
+    display: none;
+    background-image: url(../images/pariwisata.jpg);
+}
+
+
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
